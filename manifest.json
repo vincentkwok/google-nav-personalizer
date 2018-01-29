@@ -12,7 +12,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-    "js": ["content.js"],
+    "js": ["jquery-3.3.1.min.js", "URI.min.js", "content.js"],
     "matches": ["http://*/*", "https://*/*"],
     "include_globs":  ["http://www.google.*/*", "https://www.google.*/*"]
   }]
