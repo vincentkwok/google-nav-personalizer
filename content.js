@@ -12,6 +12,10 @@
     var menu = $('#hdtb-msb-vis');
     classifyTabs(menu);
 
+    // TODO: add UI to modify
+    var orderAfterAllTab = [imageTab, mapTab, videoTab, newsTab];
+    reorder(menu, orderAfterAllTab);
+
     /* 
      * As private functions 
      */
@@ -42,5 +46,12 @@
       });
     }
 
+    function reorder(menu, order) {
+      var allTab = menu.children().first();
+      var finalOrder = [allTab].concat(order);
+
+      menu.children().remove();
+      menu.prepend(finalOrder);
+    }
   });
 })(jQuery, URI);
