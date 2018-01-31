@@ -3,7 +3,7 @@
   "manifest_version": 2,
 
   "name": "Reorder Google Nav",
-  "description": "Make google great again! This extension allows the user to customized google nav items order for any search query (fixed order at this moment)",
+  "description": "Allows users customizing fixed order for google nav items (no customizing at this moment)",
   "version": "0.0.1",
 
   "browser_action": {
