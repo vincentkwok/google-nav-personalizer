@@ -4,7 +4,7 @@
 
   "name": "Rearrange google nav items order",
   "description": "This extension allows the user to customized google nav items order",
-  "version": "1.0",
+  "version": "0.0.1",
 
   "browser_action": {
     "default_title": "Rearrange google nav items order",
