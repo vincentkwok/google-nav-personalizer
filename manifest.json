@@ -2,12 +2,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Rearrange google nav items order",
   "description": "This extension allows the user to customized google nav items order",
+  "name": "Reorder Google Nav",
   "version": "0.0.1",
 
   "browser_action": {
-    "default_title": "Rearrange google nav items order",
+    "default_title": "Reorder Google Nav",
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
