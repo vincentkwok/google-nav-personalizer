@@ -8,8 +8,7 @@
 
   "browser_action": {
     "default_title": "Reorder Google Nav",
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": "icon.png"
   },
   "content_scripts": [{
     "js": ["jquery-3.3.1.min.js", "URI.min.js", "content.js"],
