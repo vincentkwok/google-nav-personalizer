@@ -8,7 +8,11 @@
 
   "browser_action": {
     "default_title": "Google Nav Personalizer",
-    "default_icon": "icon.png"
+    "default_icon": {
+      "16": "./images/icon16.png",
+      "48": "./images/icon48.png",
+      "128": "./images/icon128.png"
+    }
   },
   "content_scripts": [{
     "js": ["jquery-3.3.1.min.js", "URI.min.js", "content.js"],
