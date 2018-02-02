@@ -2,12 +2,12 @@
 {
   "manifest_version": 2,
 
-  "name": "Reorder Google Nav",
-  "description": "Allows users customizing fixed order for google nav items (no customizing at this moment)",
+  "name": "Google Nav Personalizer",
+  "description": "Allows users customizing order for google nav items (fixed order at this moment)",
   "version": "0.0.1",
 
   "browser_action": {
-    "default_title": "Reorder Google Nav",
+    "default_title": "Google Nav Personalizer",
     "default_icon": "icon.png"
   },
   "content_scripts": [{
