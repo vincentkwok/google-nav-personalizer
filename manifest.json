@@ -13,7 +13,7 @@
       "48": "./images/icon48.png",
       "128": "./images/icon128.png"
     },
-    "default_popup": ""
+    "default_popup": "popup.html"
   },
   "content_scripts": [{
     "js": ["./libs/jquery-3.3.1.min.js", "./libs/URI.min.js", "./scripts/content.js"],
