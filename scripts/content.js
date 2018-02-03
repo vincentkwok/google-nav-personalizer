@@ -15,13 +15,9 @@
 
     chrome.storage.sync.get({
       'google-nav-bar-order': DEFAULT_NAV_BAR_ORDER
-    }, function(items) {
-      console.log('items', items);
-
+    }, function(optionOrder) {
       classifyTabs(menu);
-
-      var orderAfterAllTab = [imageTab, mapTab, videoTab, newsTab];
-      reorder(menu, orderAfterAllTab);
+      reorder(menu, resolveOrder(optionOrder['google-nav-bar-order']));
     });
 
     /* 
@@ -52,6 +48,30 @@
           }
         }
       });
+    }
+
+    function resolveOrder(optionOrder) {
+      var result = optionOrder.reduce(function(accumulator, currentValue) {
+        var item = resolveOrderItem(currentValue);
+        accumulator.push(item);
+        return accumulator;
+      }, []);
+
+      return result;
+    }
+
+    function resolveOrderItem(currentValue) {
+      // TODO: handle default
+      switch(currentValue) {
+          case 'sortable-images':
+            return imageTab;
+          case 'sortable-maps':
+            return mapTab;
+          case 'sortable-videos':
+            return videoTab;
+          case 'sortable-news':
+            return newsTab;
+        };
     }
 
     function reorder(menu, order) {
