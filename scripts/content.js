@@ -51,13 +51,11 @@
     }
 
     function resolveOrder(optionOrder) {
-      var result = optionOrder.reduce(function(accumulator, currentValue) {
+      return optionOrder.reduce(function(accumulator, currentValue) {
         var item = resolveOrderItem(currentValue);
         accumulator.push(item);
         return accumulator;
       }, []);
-
-      return result;
     }
 
     function resolveOrderItem(currentValue) {
