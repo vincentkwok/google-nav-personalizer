@@ -6,14 +6,14 @@
   "description": "Allows users customizing order for google nav items (fixed order at this moment)",
   "version": "0.0.1",
 
+  "options_page": "options.html",
   "browser_action": {
     "default_title": "Google Nav Personalizer",
     "default_icon": {
       "16": "./images/icon16.png",
       "48": "./images/icon48.png",
       "128": "./images/icon128.png"
-    },
-    "default_popup": "popup.html"
+    }
   },
   "content_scripts": [{
     "js": ["./libs/jquery-3.3.1.min.js", "./libs/URI.min.js", "./scripts/content.js"],

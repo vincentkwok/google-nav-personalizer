@@ -3,13 +3,25 @@
 <head></head>
 <body>
     <style>
-        .draggable-item { width: 150px; height: 35px; padding: 0.5em; }
+        .draggable-item { 
+            width: 50px; 
+            height: 35px; 
+            padding: 0.5em; 
+            margin: 0 5px;
+            border: 1px solid #c5c5c5; 
+            background: #f6f6f6;
+        }
         #sortable { width: 700px; height: 35px; padding: 0.5em; }
 
         #sortable > div { float: left; }
+        .sortable-drag-drop { width: 50px; }
     </style>
 
-    <h3>Drag & drop to reorder google search nav bar items</h3>
+    <p>
+        <img class="sortable-drag-drop" src="./images/options/sortable-drag-drop.png" alt="drag and drop to reorder" />
+        Drag & drop to reorder google search nav bar items:
+    </p>
+
 
     <div id="sortable" class="ui-state-default">
         <div class="ui-state-default draggable-item">Images</div>
