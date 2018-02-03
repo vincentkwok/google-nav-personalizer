@@ -22,6 +22,7 @@
 
         $('#sortable').sortable({
             revert: true,
+            cursor: 'move',
             update: function(event, ui) {
                 var resultArray = $(this).sortable('toArray');
                 chrome.storage.sync.set({ 'google-nav-bar-order': resultArray }, function() {
