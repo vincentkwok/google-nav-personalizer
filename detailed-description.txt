@@ -1,0 +1,7 @@
+Are you the type that your hand is quicker than your eye? If yes, you won't miss it. 
+
+Several years ago, google showed its result nav in the fixed order: "All", "Images", "Videos", "Map", "News" and "More". Unfortunately, it changed one day. Hand was used to click on the 2nd nav item as "Image", and sometime it went wrong to click other item. The root cause is google tries to be "intelligent" to guess what the query related and reorder its nav. 
+
+We don't need it. This extension is to help.
+
+Make google great again.
