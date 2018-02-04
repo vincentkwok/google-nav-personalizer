@@ -4,7 +4,7 @@
 
   "name": "Google Search Nav Personalizer",
   "description": "Allows users customizing order for google search nav items",
-  "version": "0.0.2",
+  "version": "0.0.3",
 
   "options_page": "options.html",
   "browser_action": {
