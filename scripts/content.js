@@ -12,6 +12,7 @@
     var imageTab, videoTab, newsTab, mapTab;
 
     var menu = $('#hdtb-msb-vis');
+    var selectedTab;
 
     chrome.storage.sync.get({
       'google-nav-bar-order': DEFAULT_NAV_BAR_ORDER
@@ -25,6 +26,7 @@
      */
     function classifyTabs(menu) {
       var aTabs = menu.find('a.q.qs');
+      selectedTab = menu.find('div.hdtb-msel').first();
 
       aTabs.each(function() {
         var aTab = $(this);
@@ -62,13 +64,13 @@
       // TODO: handle default
       switch(currentValue) {
           case 'sortable-images':
-            return imageTab;
+            return imageTab || selectedTab;
           case 'sortable-maps':
-            return mapTab;
+            return mapTab || selectedTab;
           case 'sortable-videos':
-            return videoTab;
+            return videoTab || selectedTab;
           case 'sortable-news':
-            return newsTab;
+            return newsTab || selectedTab;
         };
     }
 
